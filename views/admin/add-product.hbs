@@ -1,0 +1,37 @@
+<div class="container">
+  
+
+<h1 style="margin-left:5%">Add product </h1>
+  <div class="form-group  col-md-6 ml-2">
+
+<form action="/admin/add-product" method="post" enctype="multipart/form-data">
+
+
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" name="Name" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  
+    <label for="formGroupExampleInput2">Price</label>
+    <input type="text" name="Price" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+
+
+    <label for="formGroupExampleInput2">Description</label>
+    <input type="text" name="Description" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+
+    <label for="exampleFormControlFile1">Image</label>
+    <input type="file" name="Image" class="form-control-file" id="exampleFormControlFile1">
+
+
+  <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+  </div>
+  </div>
+
+<style>
+    .comtainer{
+        display: flex;
+        justify-content: center;
+    }
+    .btn{
+        margin-left: 40%;
+    }
+</style>
