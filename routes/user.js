@@ -1,15 +1,16 @@
 const { application } = require('express');
 var express = require('express');
 var router = express.Router();
+const productHelpers = require('../helpers/product-helpers');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  let products=[{
-    
 
-  }]
 
-  res.render('index',{products,admin:false});
+  productHelpers.getAllProducts().then((products)=>{
+    res.render('user/view-products',{admin:false,products})
+
+  })
 });
 
 module.exports = router;
