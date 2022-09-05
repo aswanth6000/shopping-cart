@@ -35,171 +35,23 @@
       <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
       <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button>
       <div class="product-container">
+         {{#each products}}
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="images\1.jpg" class="product-thumb" alt="" />
+            <img  src="/product-images/{{this._id}}.jpg" class="product-thumb" alt="" />
             <button class="card-btn">add to wishlist</button>
           </div>
-          <div class="product-info">
-            <h2 class="product-brand">H&M</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\2.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Gucci</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\3.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Puma</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\4.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Nke</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\5.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Parada</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">3000</span><span
+         <div class="product-info">
+            <h2 class="product-brand">{{this.Name}}</h2>
+            <p class="product-short-description">{{this.Description}}</p>
+            <span class="price">{{this.Price}}</span><span
               class="actual-price"
             >6000</span>
           </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\6.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
           </div>
-          <div class="product-info">
-            <h2 class="product-brand">Chanel</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">4000</span><span
-              class="actual-price"
-            >8000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\2.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Dior</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\3.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Adidas</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">5000</span><span
-              class="actual-price"
-            >10000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\4.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Zara</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\5.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Hermes</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">3000</span><span
-              class="actual-price"
-            >6000</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images\6.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">Armani</h2>
-            <p class="product-short-description">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,</p>
-            <span class="price">2000</span><span
-              class="actual-price"
-            >4000</span>
-          </div>
-        </div>
+         {{/each}}
+       
 
       </div>
     </section>

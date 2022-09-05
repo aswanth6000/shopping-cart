@@ -5,6 +5,22 @@
         <input id="btn" type="button" value="Search" />
       </div>
       <a class="active" href="#home">Home</a>
-      <a href="#about">Cart</a>
-      <a href="#contact">Orders</a>
+
+      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" style="background-color:#007eff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{#if user}}
+    {{user.Name}}
+    {{else}}
+    Login
+    {{/if}}
+    <i class="bi bi-person" style="font-size:22px;"></i>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#if user}}
+    <a class="dropdown-item" href="/logout" style="color:blue;">Logout</a>
+    {{else}}
+    <a class="dropdown-item" href="/login" style="color:blue;">Login</a>
+    {{/if}}
+  </div>
+</div>
     </div>
