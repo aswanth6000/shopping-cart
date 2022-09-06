@@ -19,7 +19,7 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       {{#if user}}
-    <a class="dropdown-item" href="/logout" style="color:blue;">Logout</a>
+    <a class="dropdown-item" href="/logout" onclick="return confirm('Are you sure?')" style="color:blue;">Logout</a>
     <a class="dropdown-item" href="/orders" style="color:blue;">Orders</a>
     {{else}}
     <a class="dropdown-item" href="/login" style="color:blue;">Login</a>

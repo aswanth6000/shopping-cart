@@ -8,22 +8,6 @@
       {{!-- {{#if user}}
       <a href="/cart"><i class="bi bi-cart2 p-0" style="color: white; font-size:20px; padding: 10px;"></i></a>
        {{/if}} --}}
- <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" style="background-color:#007eff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    {{#if user}}
-    {{user.Name}}
-    {{else}}
-    Login
-    {{/if}}
-    <i class="bi bi-person" style="font-size:22px;"></i>
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      {{#if user}}
-    <a class="dropdown-item" href="/logout" style="color:blue;">Logout</a>
-    <a class="dropdown-item" href="/orders" style="color:blue;">Orders</a>
-    {{else}}
-    <a class="dropdown-item" href="/login" style="color:blue;">Login</a>
-    {{/if}}
-  </div>
-</div>
+         <a class="active" href="#home">Orders</a>
+          <a class="active" href="/logout" onclick="return confirm('Are you sure?')">Logout</a>
     </div>
