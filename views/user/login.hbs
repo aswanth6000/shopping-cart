@@ -7,7 +7,10 @@
 
             <h3 class="mb-5">Sign in</h3>
             <form action="/login" method="post">
+            {{#if loginErr}}
+              <p class="error" style="color: red;"> Invalid Email or Password</p>
 
+            {{/if}}
             <div class="form-outline mb-3">
               <label class="form-label" for="typeEmailX-2">Email</label>
               <input type="email" name="Email" id="typeEmailX-2" class="form-control form-control-lg" />
