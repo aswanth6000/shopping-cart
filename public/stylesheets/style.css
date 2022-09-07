@@ -201,12 +201,22 @@ margin-left: -139px;
 .nxt-btn:hover img {
   opacity: 1;
 }
+.hd{
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
 .crd{
 
-  overflow: hidden;
+  overflow: visible;
   padding: 50px;
   z-index: 1;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
 }
 .crd .product-card{
   width: 208px;

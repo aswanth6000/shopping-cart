@@ -40,7 +40,7 @@
           <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img  src="/product-images/{{this._id}}.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
+            <a href="/add-to-cart/{{this._id}}"><button class="card-btn">add to cart</button></a>
           </div>
          <div class="product-info">
             <h2 class="product-brand">{{this.Name}}</h2>
@@ -55,13 +55,14 @@
 
       </div>
     </section>
+    <div class="hd">-Trending-</div>
      <section class="crd">
       {{#each products}}
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img  src="/product-images/{{this._id}}.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to wishlist</button>
+            <button class="card-btn">add to cart</button>
           </div>
          <div class="product-info">
             <h2 class="product-brand">{{this.Name}}</h2>

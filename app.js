@@ -36,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload());
 
 app.use(express.static(process.env.PWD+'/public/product-images'))
-app.use(session({secret:"Key",cookie:{maxAge:600000}}))
+app.use(session({secret:"Key",resave: true,saveUninitialized: true,cookie:{maxAge:600000}}))
 db.connect((err)=>{
   if(err)
   console.log("connection error"+err);
